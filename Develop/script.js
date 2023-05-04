@@ -1,5 +1,13 @@
 // Assignment code here
-generatePassword
+// Create function generatePassword
+function generatePassword() {
+// Ask user for length
+// validate length to be at least 8 and less than 128 characters
+
+
+}
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
