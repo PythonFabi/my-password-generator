@@ -2,9 +2,17 @@
 // Create function generatePassword
 function generatePassword() {
 // Ask user for length
-// validate length to be at least 8 and less than 128 characters
+// choose length to be at least 8 and less than 128 characters
 
+// choose types
+// choose if lowercase
+// choose if uppercase
+// choose if numeric
+// choose if special character
+// make sure to at least have one of those options
 
+// Password should match all of the given criteria
+// password should be displayed in an alert or writtnen to that page
 }
 
 
