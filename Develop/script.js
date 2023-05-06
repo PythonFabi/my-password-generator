@@ -1,13 +1,12 @@
 // Assignment code here
 // Create function generatePassword
 function generatePassword() {
-  var passwordGenerator = {
-    alphabeticCharacters: 'abcdefghijklmnopqrstuvwxyz'.split( '' ),
-    numericCharacters: '0123456789'.split( '' ),
-    specialCharacters: ' !()-.?[{]}_`~@#$^&*+=%|\:;"<,>/'.split( '' ),
-    lowerCase: this.alphabeticCharacters.toLowerCase(),
-    upperCase: this.alphabeticCharacters.toUpperCase(),
-    promptPasswordLength: function() {
+    var alphabeticCharacters = 'abcdefghijklmnopqrstuvwxyz'.split( '' );
+    var numericCharacters = '0123456789'.split( '' );
+    var specialCharacters = ' !()-.?[{]}_`~@#$^&*+=%|\:;"<,>/'.split( '' );
+    var lowerCase = alphabeticCharacters.toLowerCase();
+    var upperCase = alphabeticCharacters.toUpperCase();
+    var promptPasswordLength = function() {
     var choosePasswordLength = window.prompt("Choose your the length of your desired password(between 8-128 characters)");
     if (!choosePasswordLength) {
       return;
@@ -18,9 +17,12 @@ function generatePassword() {
     } else {
       validatePasswordLength();
     };
-   },
-    validatePasswordLength: function() {
+   };
+
+
+    var validatePasswordLength = function() {
       var passwordArray = Array(choosePasswordLength);
+
     }
     
 // Ask user for length
@@ -39,7 +41,7 @@ function generatePassword() {
 // password should be displayed in an alert or writtnen to that page
     
  }
-}
+
 
 
 
