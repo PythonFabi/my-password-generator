@@ -27,7 +27,7 @@ function generatePassword(length, lowerCaseType, upperCaseType, numericType, spe
       randomPassword = randomPassword.concat(specialCharacters);
     };
 
-    var password = "";
+    var randomPassword = "";
     for (let index = 0; index < length; index++) {
       const passwordIndex = Math.floor(Math.random() * randomPassword.length);
       password += randomPassword[passwordIndex];
@@ -35,18 +35,24 @@ function generatePassword(length, lowerCaseType, upperCaseType, numericType, spe
     return password;
   }
 
-    function passwordLength() {
-    var choosePasswordLength = window.prompt("Choose your the length of your desired password(between 8-128 characters)");
-    choosePasswordLength = parseInt(choosePasswordLength);
-    if (!choosePasswordLength) {
-      return;
-    } else if (isNaN(passwordLength) || 128<choosePasswordLength<8) {
-      window.alert("not a valid password length, The password length should be between 8-128")
-    } else {
-      const
-    };
-   };
 
+    var choosePasswordLength = prompt("Choose your the length of your desired password(between 8-128 characters)");
+    choosePasswordLength = parseInt(choosePasswordLength);
+     if (isNaN(choosePasswordLength) || 8>choosePasswordLength>128) {
+      alert("not a valid password length, The password length should be between 8-128")
+    } else {
+      const lowerCaseType = confirm("Do you want lowercase letters in your password?");
+      const upperCaseType = confirm("Do you want uppercase letters in your password?");
+      const numericType = confirm("Do you want Numbers in your password?");
+      const specialCharsType = confirm("Do you want special Characters in your password?");
+    
+    if (!lowerCase && !upperCaseType && !numericType && !specialCharsType) {
+      window.alert("Not valid, choose at least one of the options available")
+    } else {
+      const password = generatePassword(choosePasswordLength, lowerCaseType, upperCaseType, specialCharsType)
+      window.alert("New Password: " + password);
+    };
+  };
 
     
     
@@ -63,7 +69,7 @@ function generatePassword(length, lowerCaseType, upperCaseType, numericType, spe
 // Password should match all of the given criteria
 // password should be displayed in an alert or writtnen to that page
     
- }
+ 
 
 
 
