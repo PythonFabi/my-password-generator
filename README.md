@@ -5,7 +5,7 @@ Welcome to my random password generator. This let's you create a function, based
 It is written with JavaScript and it made me learn, how to properly implement functions in JavaScript and create a logical structure, starting with variables, over functions,
 to the output!
 
-Here is a link to the the password generator: (Password Generator)
+Here is a link to the the password generator: [Password Generator](https://pythonfabi.github.io/my-password-generator/)
 
 ## Usage
 The usage is very easy! Click the "Generate Password" Button
