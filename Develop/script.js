@@ -4,7 +4,7 @@ function finalPassword(length, lowerCaseType, upperCaseType, numericType, specia
   const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
   const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const numericCharacters = '0123456789';
-  const specialCharacters = '!().?[{]}_~@#$^&*+=%|:;"<,>';
+  const specialCharacters = '!().?[{]}_~@#$^&*+=%|:;"<,>/-';
   var randomPassword = '';
    
    
